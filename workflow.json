@@ -1,23 +1,23 @@
 {
   "kind": "Workflow",
-  "id": "f5c97621b867550a358a0673f35df9b9",
+  "id": "e50efaa75416f1b61950d47b861d98da",
   "isDeleted": false,
-  "rev": "3-85ce9ddfcbf861cac31a7f96f382f88a",
+  "rev": "9-7c44d79c69502fb112996536d8bd275a",
   "description": "Performs a statistical comparison of one control vs muliptle treatment conditions",
   "name": "MTvC_app",
-  "createdBy": "fnaji",
+  "createdBy": "dschuller",
   "acl": {
     "kind": "Acl",
-    "owner": "pamgene",
+    "owner": "Test_NewTemplates",
     "aces": []
   },
   "createdDate": {
     "kind": "Date",
-    "value": "2022-04-01T11:02:08.415566Z"
+    "value": "2023-04-04T11:42:15.937820Z"
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2022-04-01T11:02:15.587063Z"
+    "value": "2023-04-04T11:49:32.465488Z"
   },
   "urls": [
     {
@@ -36,6 +36,21 @@
       "kind": "Pair",
       "key": "copyOf",
       "value": "4629c134b09c53160ea461e75fe41f6f"
+    },
+    {
+      "kind": "Pair",
+      "key": "_upgrade_",
+      "value": "0.10.0"
+    },
+    {
+      "kind": "Pair",
+      "key": "_upgrade_reset_",
+      "value": "0.10.0"
+    },
+    {
+      "kind": "Pair",
+      "key": "_upgrade_old_task_",
+      "value": "0.10.15"
     }
   ],
   "url": {
@@ -45,7 +60,7 @@
   "version": "0.1.5",
   "authors": [],
   "isPublic": false,
-  "projectId": "c845ceade32c4423bc616ff5ab22f158",
+  "projectId": "5fdacf2e254f508d0bd669ac039f912e",
   "folderId": "",
   "links": [
     {
@@ -377,7 +392,7 @@
             "kind": "OperatorRef",
             "name": "Mean",
             "version": "1.0.0",
-            "operatorId": "c845ceade32c4423bc616ff5ab18eb37",
+            "operatorId": "5fdacf2e254f508d0bd669ac03a02f30",
             "operatorKind": "ROperator",
             "propertyValues": [],
             "url": {
@@ -617,20 +632,25 @@
           "namespace": "ds3",
           "operatorRef": {
             "kind": "OperatorRef",
-            "name": "Z-score scaling",
-            "version": "0.0.2",
-            "operatorId": "c845ceade32c4423bc616ff5ab45478d",
+            "name": "Scale",
+            "version": "0.11.0",
+            "operatorId": "e50efaa75416f1b61950d47b861d2015",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
                 "kind": "PropertyValue",
-                "name": "Dimension",
-                "value": "Row"
+                "name": "scale",
+                "value": "true"
+              },
+              {
+                "kind": "PropertyValue",
+                "name": "center",
+                "value": "true"
               }
             ],
             "url": {
               "kind": "Url",
-              "uri": "https://github.com/tercen/zscore_scaling_operator"
+              "uri": "https://github.com/tercen/scale_operator"
             }
           },
           "environment": [
@@ -877,8 +897,8 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "Model Based Clustering",
-            "version": "0.0.2",
-            "operatorId": "bb42a8b15eb0efe86046f5b73bd52bfd",
+            "version": "0.1.0",
+            "operatorId": "5fdacf2e254f508d0bd669ac03f21e47",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
@@ -889,7 +909,7 @@
             ],
             "url": {
               "kind": "Url",
-              "uri": "https://github.com/tercen/model_based_clustering_operator"
+              "uri": "https://github.com/pamgene/model_based_clustering_operator"
             }
           },
           "environment": [
@@ -1142,8 +1162,8 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "ANOVA and Dunnett",
-            "version": "0.0.2",
-            "operatorId": "dee3d592cc5752201f54a95e6ad42f00",
+            "version": "0.1.0",
+            "operatorId": "5fdacf2e254f508d0bd669ac03f336c0",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
@@ -1154,7 +1174,7 @@
             ],
             "url": {
               "kind": "Url",
-              "uri": "https://github.com/tercen/anova_dunnett_operator"
+              "uri": "https://github.com/pamgene/anova_dunnett_operator"
             }
           },
           "environment": []
@@ -1391,7 +1411,7 @@
             "kind": "OperatorRef",
             "name": "Rank by Row mean",
             "version": "0.0.1",
-            "operatorId": "c845ceade32c4423bc616ff5ab462ce5",
+            "operatorId": "5fdacf2e254f508d0bd669ac03a06421",
             "operatorKind": "ROperator",
             "propertyValues": [],
             "url": {
@@ -3250,13 +3270,13 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "Check input 1 operator",
-            "version": "0.0.3",
-            "operatorId": "4450e70e96556a06b97562cfcb453b0f",
+            "version": "0.1.0",
+            "operatorId": "e50efaa75416f1b61950d47b861e6589",
             "operatorKind": "ROperator",
             "propertyValues": [],
             "url": {
               "kind": "Url",
-              "uri": "https://github.com/tercen/check_input1_operator"
+              "uri": "https://github.com/pamgene/check_input1_operator"
             }
           },
           "environment": []
@@ -3573,7 +3593,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 5
+          "nRows": 1
         },
         "filters": {
           "kind": "Filters",
@@ -3605,13 +3625,13 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "Col-flag",
-            "version": "0.0.1",
-            "operatorId": "c845ceade32c4423bc616ff5ab465b81",
+            "version": "0.1.0",
+            "operatorId": "5fdacf2e254f508d0bd669ac03f28acf",
             "operatorKind": "ROperator",
             "propertyValues": [],
             "url": {
               "kind": "Url",
-              "uri": "https://github.com/tercen/col_flag_operator"
+              "uri": "https://github.com/pamgene/col_flag_operator"
             }
           },
           "environment": [
@@ -3655,7 +3675,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 10
+          "nRows": 1
         },
         "taskId": ""
       },
@@ -4355,7 +4375,7 @@
   ],
   "offset": {
     "kind": "Point",
-    "x": -111.0,
-    "y": -73.0
+    "x": -47.0,
+    "y": -175.0
   }
 }
