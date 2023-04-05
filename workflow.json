@@ -835,7 +835,7 @@
                   "factor": {
                     "kind": "Factor",
                     "name": "ds3.value",
-                    "type": "string"
+                    "type": "double"
                   },
                   "rectangle": {
                     "kind": "Rectangle",
