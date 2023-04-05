@@ -2,39 +2,44 @@
 
 ##### Description
 
-`MTvC_app` is an application that provides an easy to use interface to the statistical analysis of data were multiple (categorical) treatment conditions are compared to a single control condition.
+`MTvC_app` (Multiple Treatments versus Control) provides an easy to use interface to the statistical analysis of data where multiple (categorical) treatment conditions are compared to a single control condition.
 
 ##### Details
 
-* App that provides an easy to use interface to the statistical analysis of data were multiple (categorical) treatment conditions are compared to a single control condition. E.g. the analysis of the effect of 3 different compounds on kinase activity relative to the vehicle control (e.g. the effect of spiking in a compound in the sample). It tests for significant effects anywhere between the treatments (including control) and for significant effect between all separate control-treatment pairs. In addition, peptides with similar response to the treatments will be grouped using a clustering approach.
-* This is suitable for the analysis of experimental designs where sample treatments are balanced over experimental units such as PamChips or PS-12 runs.
-If so, systematic variation between experimental units will be accounted for in the analysis, by modeling the two main effects "Treatment"and "Experimental Unit" in a 2-way ANOVA (without interaction). If this is not applicable the Experimental Unit term can be omitted from the analysis and 1-way ANOVA will be applied.
-* This App is implemented in the C1-T1-T2-T3 workflow, a PS12 workflow that may provide a good starting point for using this app.
-* volcano plot visualization to inspect the overall results of the control versus treatment tests.
-* Clusters of peptides with similar response to treatment are shown in cluster plots like the ones shown here.
-* Treatment effects are visualized using a ratio map, with the peptides organized in clusters.
-* The basal data is visualized using a heatmap with the peptides sorted according to their mean over all treatments.
-* There is a basic version of this PamApp that lacks the peptide clustering functionality but has the possibility to analyse multiple samples at the same time.
+* Compares multiple (categorical) Treatment conditions to a single Control condition. E.g. the analysis of the effect of 3 different compounds on kinase activity relative to the vehicle control. 
+* Peptides showing a significant effect between any Treatment conditions are identified using ANOVA.
+* Based on the results of the ANOVA, each individual Treatment condition is tested against the Control by Dunnett's test. This test can be viewed as a more powerful version of the t-test compared to performing multiple separate t-tests.
+* The statistical tests assume that the variation within all conditions is equal. For PamChip data after log transformation this is usually a reasonable assumption. Results may be inaccurate if this condition is not met.
+* For the Dunnett's test as well as for the approach of applying multiple separate t-test, it has to be taken into account that multiple comparisons are made. As a consequence, the probability of a false positive is actually larger than that suggested by the p-value resulting from the separate test's. It is common for implementations of Dunnett's test to return p-values that are corrected for this. However, in the case of PamChip data there is also multiple testing associated with the multiple peptides in the analysis. Therefore, in this implementation of Dunnett's test there is no multiple testing correction for testing multiple peptides.
+* Peptides with similar response to the treatments are clustered.
+* This app is implemented in the C1T1T2T3 workflow.
 
-The input data is the [MTvC dataset]()
+Views:
+* Basal Data View: heatmap with peptides sorted according to their mean over all treatments.
+* Peptide Cluster View: Line plots of z-score-scaled signals per peptide. This view can be used to identify the different patterns of signal as a function of treatment and to find clusters of peptides that have a similar response to treatment. The line plots are colored according to the significant effects between any treatments, resulting from 1-way ANOVA: red indicates significant treatment effect, black means not significant. 
+* Ratio Map View: heatmap of log-ratio treatment effects. 
+* Ratio Map for Significant Peptides: Ratio Map View filtered for significant peptides.
+* Volcano Plot View
+
+##### Output relations
+
+* pvalue.any: p value (from ANOVA) for the probability that there is no difference between any of the Treatments including Control. A low p-value means significant effect between any Treatment-Control pair. 
+* pvalue.treatment:	p-value (from Dunnett test) for the probability that there is no difference between the corresponding Treatment and Control. For the Control, this value is NA. A low p-value means significant effect between all Treatment-Control pairs. 
+* LFC:	Log2 fold change between Treatment and Control. For the Control, this value is NA.
+* Treatment_ClusterIdx (ClusterAnnotation):	cluster indices of peptides. Available as a Spot factor. Peptides with a similar response to Treatment are clustered together.
+
 
 This workflow has 6 operators:
 
-* [log_cutoff_operator](https://github.com/tercen/log_cutoff_operator)
+* [log_cutoff_operator](https://github.com/pamgene/log_cutoff_operator)
 * [mean_operator](https://github.com/tercen/mean_operator)
-* [zscore_scaling_operator](https://github.com/tercen/zscore_scaling_operator)
-* [rank_by_row_mean_operator](https://github.com/tercen/rank_by_row_mean_operator)
-* [model_based_clustering_operator](https://github.com/model_based_clustering_operator)
-* [CvsT_operator](https://github.com/tercen/CvsT_operator)
+* [scale_operator](https://github.com/tercen/scale_operator)
+* [rank_by_row_mean_operator](https://github.com/pamgene/rank_by_row_mean_operator)
+* [model_based_clustering_operator](https://github.com/pamgene/model_based_clustering_operator)
 
-This workflow has 5 views:
 
-* Basal Data View
-* Peptide Cluster View
-* Ratio Map View
-* Ratio Map for Significant Peptides
-* Volcano Plot View
 
 ##### See Also
 
-[MTvC_app](https://github.com/tercen/MTvC_app)
+https://pamcloud.pamgene.com/wiki/Wiki.jsp?page=PamApp%20for%20Multiple%20Treatments%20Vs%20Control
+
