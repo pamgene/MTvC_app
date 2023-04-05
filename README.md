@@ -2,21 +2,21 @@
 
 ##### Description
 
-`MTvC_app` (Multiple Treatments versus Control) provides an easy to use interface to the statistical analysis of data where multiple (categorical) treatment conditions are compared to a single control condition.
+`MTvC_app`, Multiple Treatments versus Control provides an easy-to-use interface to the statistical analysis of data where multiple categorical Treatment conditions are compared to a single Control condition.
 
 ##### Details
 
-* Compares multiple (categorical) Treatment conditions to a single Control condition. E.g. the analysis of the effect of 3 different compounds on kinase activity relative to the vehicle control. 
+* Compares multiple (categorical) Treatment conditions to a single Control condition. E.g. the effect of 3 different compounds on kinase activity relative to the vehicle control. 
 * Peptides showing a significant effect between any Treatment conditions are identified using ANOVA.
-* Based on the results of the ANOVA, each individual Treatment condition is tested against the Control by Dunnett's test. This test can be viewed as a more powerful version of the t-test compared to performing multiple separate t-tests.
+* Based on the results of the ANOVA, each individual Treatment condition is tested against the Control by Dunnett's test. This test is a more powerful version of the t-test compared to performing multiple separate t-tests.
 * The statistical tests assume that the variation within all conditions is equal. For PamChip data after log transformation this is usually a reasonable assumption. Results may be inaccurate if this condition is not met.
-* For the Dunnett's test as well as for the approach of applying multiple separate t-test, it has to be taken into account that multiple comparisons are made. As a consequence, the probability of a false positive is actually larger than that suggested by the p-value resulting from the separate test's. It is common for implementations of Dunnett's test to return p-values that are corrected for this. However, in the case of PamChip data there is also multiple testing associated with the multiple peptides in the analysis. Therefore, in this implementation of Dunnett's test there is no multiple testing correction for testing multiple peptides.
+* For the Dunnett's test as well as for the approach of applying multiple separate t-test, it has to be taken into account that multiple comparisons are made. As a consequence, the probability of a false positive is actually larger than that suggested by the p-value resulting from the separate test's. In the case of PamChip data there is also multiple testing associated with the multiple peptides in the analysis. Therefore, in this implementation of Dunnett's test there is no multiple testing correction for testing multiple peptides.
 * Peptides with similar response to the treatments are clustered.
-* This app is implemented in the C1T1T2T3 workflow.
+* This app is implemented in the C1T1T2T3 workflows.
 
 Views:
 * Basal Data View: heatmap with peptides sorted according to their mean over all treatments.
-* Peptide Cluster View: Line plots of z-score-scaled signals per peptide. This view can be used to identify the different patterns of signal as a function of treatment and to find clusters of peptides that have a similar response to treatment. The line plots are colored according to the significant effects between any treatments, resulting from 1-way ANOVA: red indicates significant treatment effect, black means not significant. 
+* Peptide Cluster View: Line plots of z-score scaled signals per peptide. This view can be used to identify the different patterns of signal as a function of treatment and to find clusters of peptides that have a similar response to treatment. The line plots are colored according to the significant effects between any treatments, resulting from 1-way ANOVA: red indicates significant treatment effect, black means not significant. 
 * Ratio Map View: heatmap of log-ratio treatment effects. 
 * Ratio Map for Significant Peptides: Ratio Map View filtered for significant peptides.
 * Volcano Plot View
@@ -36,7 +36,6 @@ This workflow has 6 operators:
 * [scale_operator](https://github.com/tercen/scale_operator)
 * [rank_by_row_mean_operator](https://github.com/pamgene/rank_by_row_mean_operator)
 * [model_based_clustering_operator](https://github.com/pamgene/model_based_clustering_operator)
-
 
 
 ##### See Also
