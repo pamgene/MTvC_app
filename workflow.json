@@ -834,7 +834,7 @@
                   "kind": "GraphicalFactor",
                   "factor": {
                     "kind": "Factor",
-                    "name": "",
+                    "name": "ds3.value",
                     "type": "string"
                   },
                   "rectangle": {
@@ -1920,7 +1920,7 @@
                   "kind": "GraphicalFactor",
                   "factor": {
                     "kind": "Factor",
-                    "name": "ds3.Row.value",
+                    "name": "ds3.value",
                     "type": "double"
                   },
                   "rectangle": {
