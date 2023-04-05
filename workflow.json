@@ -2,7 +2,7 @@
   "kind": "Workflow",
   "id": "e50efaa75416f1b61950d47b861d98da",
   "isDeleted": false,
-  "rev": "9-7c44d79c69502fb112996536d8bd275a",
+  "rev": "12-cedd47b450f144af0b3237c2023aa4da",
   "description": "Performs a statistical comparison of one control vs muliptle treatment conditions",
   "name": "MTvC_app",
   "createdBy": "dschuller",
@@ -17,7 +17,7 @@
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2023-04-04T11:49:32.465488Z"
+    "value": "2023-04-05T08:24:50.711061Z"
   },
   "urls": [
     {
@@ -391,8 +391,8 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "Mean",
-            "version": "1.0.0",
-            "operatorId": "5fdacf2e254f508d0bd669ac03a02f30",
+            "version": "1.2.0",
+            "operatorId": "5fdacf2e254f508d0bd669ac03f1f44a",
             "operatorKind": "ROperator",
             "propertyValues": [],
             "url": {
@@ -436,7 +436,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "6a45a4f3-b0cb-4ad4-b41e-abeb285163fd"
+        "id": "dd296f14-2f88-4455-b0bf-f415e91eae80"
       }
     },
     {
@@ -700,7 +700,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "ebacadcd-ac26-40a8-9321-2cab6e01548f"
+        "id": "030defc4-c6fa-4b0f-90f3-6d8ca1825d3c"
       }
     },
     {
@@ -834,8 +834,8 @@
                   "kind": "GraphicalFactor",
                   "factor": {
                     "kind": "Factor",
-                    "name": "ds3.Row.Scale",
-                    "type": "double"
+                    "name": "",
+                    "type": "string"
                   },
                   "rectangle": {
                     "kind": "Rectangle",
@@ -922,6 +922,21 @@
               "kind": "Pair",
               "key": "ram",
               "value": "0"
+            },
+            {
+              "kind": "Pair",
+              "key": "cpu-shares",
+              "value": "0"
+            },
+            {
+              "kind": "Pair",
+              "key": "tercen.collect.stats",
+              "value": "false"
+            },
+            {
+              "kind": "Pair",
+              "key": "debug",
+              "value": "false"
             }
           ]
         },
@@ -959,7 +974,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "b5f95c8d-6c78-4ccf-9a1a-9facd2b669bd"
+        "id": "ee2c891e-73db-436b-be6c-d54550994ff7"
       }
     },
     {
@@ -1213,7 +1228,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "101dc1d6-659b-4583-8508-ed5bb62a06a7"
+        "id": "12dd5072-7ea9-4304-bb50-19b1694672f8"
       }
     },
     {
@@ -1410,8 +1425,8 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "Rank by Row mean",
-            "version": "0.0.1",
-            "operatorId": "5fdacf2e254f508d0bd669ac03a06421",
+            "version": "0.1.0",
+            "operatorId": "5fdacf2e254f508d0bd669ac03a15f37",
             "operatorKind": "ROperator",
             "propertyValues": [],
             "url": {
@@ -1455,7 +1470,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "283cea5a-0c63-44b2-a30d-3fd880cec0d5"
+        "id": "fcf018e7-cc61-4125-8dfc-ff52f0cb3353"
       }
     },
     {
@@ -1752,7 +1767,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "4cc3b4c7-dccd-4bec-ad4e-0fbef737567e"
+        "id": "03777eae-f0d5-4ae5-9489-4e7550ee1814"
       }
     },
     {
@@ -2013,7 +2028,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "c6fbea80-29d7-4422-8328-b16aef630fbc"
+        "id": "6886a851-c729-4774-a3c4-db26b7b06c37"
       }
     },
     {
@@ -2313,7 +2328,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "02edc515-2412-43a6-b0b6-b985e0db81f4"
+        "id": "3c372fba-01d3-4d80-935a-529e6531ee45"
       }
     },
     {
@@ -2610,7 +2625,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "c6072dcf-ef27-4e35-871c-0ed167ac58a1"
+        "id": "af0cf32b-88a2-4f93-8196-f5083dfc7464"
       }
     },
     {
@@ -2871,7 +2886,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "050d8556-08fa-46e7-ae98-e266014b81e4"
+        "id": "a34aa54e-f853-469c-acf0-47388e21fe63"
       }
     },
     {
@@ -3315,7 +3330,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "8c2f1e68-72ee-449f-b844-7f6bd9b1f50b"
+        "id": "3809b6ce-cc97-4eb6-9cc3-f8091a0aac35"
       }
     },
     {
@@ -3681,7 +3696,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "ff5227c5-7c00-42ab-87db-f98cf8282798"
+        "id": "58a60345-b1ab-4d8e-8d37-9b6d378b136f"
       }
     },
     {
@@ -4066,7 +4081,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "d2e241f4-c3f9-4a84-be6c-fdc81d2a1c2b"
+        "id": "13d1c208-d806-41af-9a0b-31f64bb6398c"
       }
     },
     {
@@ -4159,15 +4174,9 @@
             "name": "Measurement",
             "type": "double",
             "isSingle": true,
-            "description": "",
-            "factorName": "Measurement",
-            "factors": [
-              {
-                "kind": "Factor",
-                "name": "Measurement",
-                "type": "double"
-              }
-            ],
+            "description": "Select the factor that defines the values to use in the computation.\n\nExample:\n* log transform of S100\n* log transformed and ComBat Corrected S100\n* VSN transformed S100\n* VSN transformed and ComBat Corrected S100",
+            "factorName": "Quantitation Type",
+            "factors": [],
             "isRequired": true
           },
           {
@@ -4175,15 +4184,9 @@
             "name": "Group",
             "type": "string",
             "isSingle": true,
-            "description": "",
-            "factorName": "Group",
-            "factors": [
-              {
-                "kind": "Factor",
-                "name": "Group",
-                "type": "string"
-              }
-            ],
+            "description": "Select the factor that defines the comparison groups.\n\nExample:\n* Test Condition\n* Treatment off chip",
+            "factorName": "Test Condition",
+            "factors": [],
             "isRequired": true
           },
           {
@@ -4191,15 +4194,9 @@
             "name": "Variable",
             "type": "string",
             "isSingle": false,
-            "description": "",
-            "factorName": "Variable",
-            "factors": [
-              {
-                "kind": "Factor",
-                "name": "Variable",
-                "type": "string"
-              }
-            ],
+            "description": "Select the peptide identifier.\n\nExample:\n* ID",
+            "factorName": "Peptide",
+            "factors": [],
             "isRequired": true
           },
           {
@@ -4207,15 +4204,9 @@
             "name": "Observation",
             "type": "string",
             "isSingle": false,
-            "description": "",
-            "factorName": "Observation",
-            "factors": [
-              {
-                "kind": "Factor",
-                "name": "Observation",
-                "type": "string"
-              }
-            ],
+            "description": "Select the factor(s) defining a single value per cell.\n\nExample:\n* Barcode and Row\n* Barcode and Array\n* Sample Name",
+            "factorName": "Single Data Value per Cell",
+            "factors": [],
             "isRequired": true
           },
           {
@@ -4223,15 +4214,9 @@
             "name": "Pair",
             "type": "string",
             "isSingle": false,
-            "description": "",
-            "factorName": "Pair",
-            "factors": [
-              {
-                "kind": "Factor",
-                "name": "Pair",
-                "type": "string"
-              }
-            ],
+            "description": "Select the factor which defines the pairing (if applicable). \n\nExample:\n* Barcode\n* Cell line\n* Replicate\n* Supergroup",
+            "factorName": "Pairing Factor",
+            "factors": [],
             "isRequired": false
           }
         ],
@@ -4239,23 +4224,12 @@
           {
             "kind": "MappingFilter",
             "name": "Control",
-            "description": "",
+            "description": "Select the factor which defines the control.\n\nExample:\n* C-(DMSO, WT, Control)",
             "namedFilter": {
               "kind": "NamedFilter",
               "logical": "and",
               "not": false,
-              "filterExprs": [
-                {
-                  "kind": "FilterExpr",
-                  "filterOp": "equals",
-                  "stringValue": "control",
-                  "factor": {
-                    "kind": "Factor",
-                    "name": "Group",
-                    "type": "string"
-                  }
-                }
-              ],
+              "filterExprs": [],
               "name": "Control"
             },
             "isRequired": false
@@ -4375,7 +4349,7 @@
   ],
   "offset": {
     "kind": "Point",
-    "x": -47.0,
-    "y": -175.0
+    "x": 29.0,
+    "y": -83.0
   }
 }
