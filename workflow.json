@@ -1920,7 +1920,7 @@
                   "kind": "GraphicalFactor",
                   "factor": {
                     "kind": "Factor",
-                    "name": "ds3.scale",
+                    "name": "ds3.value",
                     "type": "double"
                   },
                   "rectangle": {
