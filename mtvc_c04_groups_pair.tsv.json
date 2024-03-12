@@ -1,0 +1,121 @@
+{
+ "kind": "TableSchema",
+ "id": "7e56fe42e889ad9dcc53433b328d51d1ce7a3500f9373206e02797d589f6f661",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "mtvc_c04_groups_pair.tsv",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "SHA256",
+   "value": "7e56fe42e889ad9dcc53433b328d51d1ce7a3500f9373206e02797d589f6f661"
+  }
+ ],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "",
+ "nRows": 60,
+ "columns": [
+  {
+   "kind": "ColumnSchema",
+   "id": "1002a369-c42a-4fea-8d0e-8909f9354b2f",
+   "name": "Observation",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "c08a05cb-c541-4c49-8f1a-a76f1c0d2cca",
+   "name": "Variable",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "c2d96580-e8a5-4052-8c33-740417f2c7c2",
+   "name": "Measurement",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "db834724-7249-4ee4-b866-0a079dc3ff03",
+   "name": "Group",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "2d36ea93-139c-434b-a371-cd99b66dad13",
+   "name": "Pair",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  }
+ ],
+ "dataDirectory": "data/7e/56/7e56fe42e889ad9dcc53433b328d51d1ce7a3500f9373206e02797d589f6f661",
+ "relation": {
+  "kind": "Relation",
+  "id": "d2081e19-d4bf-4d3d-b53c-aa9f11416578"
+ }
+}

@@ -29,9 +29,9 @@ Views:
 * Treatment_ClusterIdx (ClusterAnnotation):	cluster indices of peptides. Available as a Spot factor. Peptides with a similar response to Treatment are clustered together.
 
 
-This workflow has 6 operators:
+Operators:
 
-* [log_cutoff_operator](https://github.com/pamgene/log_cutoff_operator)
+* [ANOVA_Dunett_operator](https://github.com/pamgene/anova_dunnett_operator)
 * [mean_operator](https://github.com/tercen/mean_operator)
 * [scale_operator](https://github.com/tercen/scale_operator)
 * [rank_by_row_mean_operator](https://github.com/pamgene/rank_by_row_mean_operator)
