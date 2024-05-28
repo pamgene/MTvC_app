@@ -172,21 +172,15 @@
   },
   {
    "kind": "Link",
-   "id": "20926bb9-fdcc-4fc4-8728-793e95b31f30",
+   "id": "859e67b6-4450-4f5e-bbaa-b3950641bf48",
    "inputId": "e14718b3-73ab-4abf-9741-749663c40254-i-0",
    "outputId": "9b842d29-17a4-463f-823e-febdcebba52f-o-0"
   },
   {
    "kind": "Link",
-   "id": "5b70a3a4-7515-4f28-b00e-fcb49d416a52",
-   "inputId": "3ee4d1e5-a4e3-498f-aa81-58bf0d8a6736-i-0",
-   "outputId": "453d014b-7ca6-4d68-b1e2-9f9dc4b685ed-o-0"
-  },
-  {
-   "kind": "Link",
-   "id": "f3c11430-c040-495c-8a32-9d4930a5658d",
+   "id": "10a69f5d-2ca9-4a85-a8ec-08975f2778e3",
    "inputId": "9b842d29-17a4-463f-823e-febdcebba52f-i-0",
-   "outputId": "cbd51d58-6578-4396-b681-9975fffbfa1c-o-0"
+   "outputId": "73f872b6-8d42-4bf6-b172-315873e17c17-o-0"
   }
  ],
  "steps": [
@@ -215,12 +209,12 @@
     "kind": "Rectangle",
     "extent": {
      "kind": "Point",
-     "x": 126.02157592773438,
+     "x": 126.02183532714844,
      "y": 55.0
     },
     "topLeft": {
      "kind": "Point",
-     "x": 513.0606852552626,
+     "x": 513.0605555555555,
      "y": 248.94444444444423
     }
    },
@@ -385,7 +379,7 @@
       "kind": "OperatorRef",
       "name": "Mean",
       "version": "1.3.2",
-      "operatorId": "4",
+      "operatorId": "5",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -465,7 +459,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "1d983c04-e984-4d63-8160-8347783fd198"
+    "id": "ff8a0625-b5b6-4053-ad7f-1a80724bd06a"
    },
    "parentDataStepId": ""
   },
@@ -494,12 +488,12 @@
     "kind": "Rectangle",
     "extent": {
      "kind": "Point",
-     "x": 113.30964660644531,
+     "x": 113.30987548828125,
      "y": 55.0
     },
     "topLeft": {
      "kind": "Point",
-     "x": 519.9284087117514,
+     "x": 519.9282942708335,
      "y": 349.8333333333332
     }
    },
@@ -740,7 +734,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "c35bf51b-0651-468f-b631-0ab7451289aa"
+    "id": "396fe2e6-77ec-4679-93b9-f656e00a2a5f"
    },
    "parentDataStepId": ""
   },
@@ -769,12 +763,12 @@
     "kind": "Rectangle",
     "extent": {
      "kind": "Point",
-     "x": 113.29563903808594,
+     "x": 113.29583740234375,
      "y": 55.0
     },
     "topLeft": {
      "kind": "Point",
-     "x": 521.6806807793515,
+     "x": 521.6805815972226,
      "y": 444.6111111111112
     }
    },
@@ -1025,7 +1019,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "42f8b9b3-b985-47cd-a6ef-58ed6f221417"
+    "id": "93800ccb-227b-4602-af68-aedef012d2a4"
    },
    "parentDataStepId": ""
   },
@@ -1054,12 +1048,12 @@
     "kind": "Rectangle",
     "extent": {
      "kind": "Point",
-     "x": 136.07354736328125,
+     "x": 136.07386779785156,
      "y": 55.0
     },
     "topLeft": {
      "kind": "Point",
-     "x": 701.6536237589524,
+     "x": 701.6534635416673,
      "y": 509.0555555555552
     }
    },
@@ -1230,7 +1224,7 @@
       "kind": "OperatorRef",
       "name": "ANOVA and Dunnett",
       "version": "0.1.0",
-      "operatorId": "1",
+      "operatorId": "2",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -1290,7 +1284,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "d459054c-0cbf-4204-b1e6-6a302ce5e4a2"
+    "id": "be666a04-4370-4899-8f86-86da37fc5358"
    },
    "parentDataStepId": ""
   },
@@ -1319,12 +1313,12 @@
     "kind": "Rectangle",
     "extent": {
      "kind": "Point",
-     "x": 124.15960693359375,
+     "x": 124.15985107421875,
      "y": 55.0
     },
     "topLeft": {
      "kind": "Point",
-     "x": 705.7061941189239,
+     "x": 705.7060720486114,
      "y": 307.8333333333335
     }
    },
@@ -1489,7 +1483,7 @@
       "kind": "OperatorRef",
       "name": "Rank by Row Means",
       "version": "0.1.2",
-      "operatorId": "5",
+      "operatorId": "4",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -1543,7 +1537,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "161c246f-b62c-4b11-8e26-561937cc8513"
+    "id": "ecf6a791-378a-46f3-a970-f976528f002c"
    },
    "parentDataStepId": ""
   },
@@ -1572,12 +1566,12 @@
     "kind": "Rectangle",
     "extent": {
      "kind": "Point",
-     "x": 112.06362915039062,
+     "x": 112.06388854980469,
      "y": 55.0
     },
     "topLeft": {
      "kind": "Point",
-     "x": 884.8977251858191,
+     "x": 884.8975954861121,
      "y": 370.38888888888874
     }
    },
@@ -1851,7 +1845,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "a90536c9-7a8e-4e5e-ad53-0e4175662a25"
+    "id": "8e29b9ce-11bd-4d19-9392-109efd8dcf79"
    },
    "parentDataStepId": ""
   },
@@ -1880,12 +1874,12 @@
     "kind": "Rectangle",
     "extent": {
      "kind": "Point",
-     "x": 139.37753295898438,
+     "x": 139.37779235839844,
      "y": 55.0
     },
     "topLeft": {
      "kind": "Point",
-     "x": 402.6340706719301,
+     "x": 402.63394097222306,
      "y": 660.0555555555557
     }
    },
@@ -2123,7 +2117,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "82f82bfe-f956-4054-949f-5f404727a7b7"
+    "id": "e345f312-5420-4c5d-bdfc-0551b33ede55"
    },
    "parentDataStepId": ""
   },
@@ -2152,12 +2146,12 @@
     "kind": "Rectangle",
     "extent": {
      "kind": "Point",
-     "x": 108.85765075683594,
+     "x": 108.85787963867188,
      "y": 55.0
     },
     "topLeft": {
      "kind": "Point",
-     "x": 608.5514729478627,
+     "x": 608.5513585069448,
      "y": 665.4999999999999
     }
    },
@@ -2435,7 +2429,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "f477dc0d-c270-4bdb-bcd3-a068303ca4ab"
+    "id": "3b603919-9bef-4781-89e0-e09c0636e31e"
    },
    "parentDataStepId": ""
   },
@@ -2464,12 +2458,12 @@
     "kind": "Rectangle",
     "extent": {
      "kind": "Point",
-     "x": 216.25120544433594,
+     "x": 216.251708984375,
      "y": 55.0
     },
     "topLeft": {
      "kind": "Point",
-     "x": 766.8849436102978,
+     "x": 766.8846918402783,
      "y": 665.6111111111112
     }
    },
@@ -2745,7 +2739,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "23499052-5a26-4fd4-bea8-8799e7df12be"
+    "id": "6e673635-a66c-4f78-8e92-c26af24f0aeb"
    },
    "parentDataStepId": ""
   },
@@ -2774,12 +2768,12 @@
     "kind": "Rectangle",
     "extent": {
      "kind": "Point",
-     "x": 123.59957885742188,
+     "x": 123.599853515625,
      "y": 55.0
     },
     "topLeft": {
      "kind": "Point",
-     "x": 1069.4403847249353,
+     "x": 1069.4402473958337,
      "y": 664.7222222222218
     }
    },
@@ -3017,7 +3011,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "90c388ef-435c-4f70-97b1-1a7458567628"
+    "id": "438b5220-055b-4949-ac87-a4bf9cf96f8c"
    },
    "parentDataStepId": ""
   },
@@ -3423,7 +3417,7 @@
       "kind": "OperatorRef",
       "name": "Check input 1 operator",
       "version": "0.1.0",
-      "operatorId": "2",
+      "operatorId": "3",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -3477,7 +3471,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "577ce6f4-b1bd-42b4-810a-a160f8277528"
+    "id": "b7631831-96cb-4e90-8cbc-96c716ba555c"
    },
    "parentDataStepId": ""
   },
@@ -3506,12 +3500,12 @@
     "kind": "Rectangle",
     "extent": {
      "kind": "Point",
-     "x": 102.55767822265625,
+     "x": 102.55787658691406,
      "y": 55.0
     },
     "topLeft": {
      "kind": "Point",
-     "x": 523.3202293904625,
+     "x": 523.3201302083336,
      "y": 60.94444444444427
     }
    },
@@ -3696,7 +3690,7 @@
       "kind": "OperatorRef",
       "name": "Col-flag",
       "version": "0.1.0",
-      "operatorId": "3",
+      "operatorId": "1",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -3761,7 +3755,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "d00aa820-a682-4b5b-991d-c5f77b8cda91"
+    "id": "97550d50-1d55-4382-bc1e-efcc8849588a"
    },
    "parentDataStepId": ""
   },
@@ -3853,12 +3847,12 @@
     "kind": "Rectangle",
     "extent": {
      "kind": "Point",
-     "x": 95.1376953125,
+     "x": 95.13786315917969,
      "y": 55.0
     },
     "topLeft": {
      "kind": "Point",
-     "x": 267.52881469726617,
+     "x": 267.5287307739263,
      "y": 759.833333333333
     }
    },
@@ -4033,6 +4027,45 @@
        ],
        "meta": [],
        "name": "ds0.checked_input"
+      },
+      {
+       "kind": "NamedFilter",
+       "logical": "or",
+       "not": false,
+       "filterExprs": [
+        {
+         "kind": "FilterExpr",
+         "filterOp": "equals",
+         "stringValue": "Control",
+         "factor": {
+          "kind": "Factor",
+          "name": "Group",
+          "type": "string"
+         }
+        },
+        {
+         "kind": "FilterExpr",
+         "filterOp": "equals",
+         "stringValue": "group2",
+         "factor": {
+          "kind": "Factor",
+          "name": "Group",
+          "type": "string"
+         }
+        },
+        {
+         "kind": "FilterExpr",
+         "filterOp": "equals",
+         "stringValue": "group3",
+         "factor": {
+          "kind": "Factor",
+          "name": "Group",
+          "type": "string"
+         }
+        }
+       ],
+       "meta": [],
+       "name": "Groups to export"
       }
      ]
     },
@@ -4065,7 +4098,7 @@
     },
     "rowTable": {
      "kind": "CrosstabTable",
-     "cellSize": 9.540476190476193,
+     "cellSize": 10.572734254992323,
      "offset": 0,
      "graphicalFactors": [
       {
@@ -4154,13 +4187,13 @@
       }
      ],
      "rectangleSelections": [],
-     "nRows": 400
+     "nRows": 60
     },
     "taskId": ""
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "9937fe90-d354-42d1-9276-a368ee9692ce"
+    "id": "0477cc28-3981-4538-ae03-e7e7c6e8c3bc"
    },
    "parentDataStepId": ""
   },
@@ -4228,13 +4261,13 @@
     "kind": "Rectangle",
     "extent": {
      "kind": "Point",
-     "x": 94.17170715332031,
+     "x": 94.17190551757812,
      "y": 55.0
     },
     "topLeft": {
      "kind": "Point",
-     "x": 527.2441774834525,
-     "y": -33.72222222222227
+     "x": 525.021856079102,
+     "y": -28.166666666666714
     }
    },
    "state": {
@@ -4255,12 +4288,12 @@
       "kind": "MappingFactor",
       "name": "Measurement",
       "type": "double",
-      "description": "Select the factor that defines the values to use in the computation.\n",
+      "description": "Select the factor that defines the values to use in the computation.\n\nExample:\n* log transform of S100\n* log transformed and ComBat Corrected S100\n* VSN transformed S100\n* VSN transformed and ComBat Corrected S100",
       "ontologyMapping": "",
       "crosstabMapping": "",
       "cardinality": "",
       "factors": [],
-      "factorName": "Measurement",
+      "factorName": "Quantitation Type",
       "isSingle": true,
       "isRequired": true
      },
@@ -4268,7 +4301,7 @@
       "kind": "MappingFactor",
       "name": "Group",
       "type": "string",
-      "description": "Select the factor that defines the comparison groups.\n",
+      "description": "Select the factor that defines the comparison groups.\n\nExample:\n* Test Condition\n* Treatment off chip",
       "ontologyMapping": "",
       "crosstabMapping": "",
       "cardinality": "",
@@ -4281,7 +4314,7 @@
       "kind": "MappingFactor",
       "name": "Variable",
       "type": "string",
-      "description": "Select the peptide identifier.\n",
+      "description": "Select the peptide identifier.\n\nExample:\n* ID",
       "ontologyMapping": "",
       "crosstabMapping": "",
       "cardinality": "",
@@ -4294,7 +4327,7 @@
       "kind": "MappingFactor",
       "name": "Observation",
       "type": "string",
-      "description": "Select the factor(s) defining a single value per cell.\n",
+      "description": "Select the factor(s) defining a single value per cell.\n\nExample:\n* Barcode and Row\n* Barcode and Array\n* Sample Name",
       "ontologyMapping": "",
       "crosstabMapping": "",
       "cardinality": "",
@@ -4307,7 +4340,7 @@
       "kind": "MappingFactor",
       "name": "Pair",
       "type": "string",
-      "description": "Select the factor which defines the pairing (if applicable). \n",
+      "description": "Select the factor which defines the pairing (if applicable). \n\nExample:\n* Barcode\n* Cell line\n* Replicate\n* Supergroup",
       "ontologyMapping": "",
       "crosstabMapping": "",
       "cardinality": "",
@@ -4341,7 +4374,52 @@
        "meta": [],
        "name": "Control"
       },
-      "isRequired": false
+      "isRequired": true
+     },
+     {
+      "kind": "MappingFilter",
+      "name": "Groups to export",
+      "description": "",
+      "namedFilter": {
+       "kind": "NamedFilter",
+       "logical": "or",
+       "not": false,
+       "filterExprs": [
+        {
+         "kind": "FilterExpr",
+         "filterOp": "equals",
+         "stringValue": "Control",
+         "factor": {
+          "kind": "Factor",
+          "name": "Group",
+          "type": "string"
+         }
+        },
+        {
+         "kind": "FilterExpr",
+         "filterOp": "equals",
+         "stringValue": "group2",
+         "factor": {
+          "kind": "Factor",
+          "name": "Group",
+          "type": "string"
+         }
+        },
+        {
+         "kind": "FilterExpr",
+         "filterOp": "equals",
+         "stringValue": "group3",
+         "factor": {
+          "kind": "Factor",
+          "name": "Group",
+          "type": "string"
+         }
+        }
+       ],
+       "meta": [],
+       "name": "Groups to export"
+      },
+      "isRequired": true
      }
     ],
     "steps": [],
@@ -4430,13 +4508,7 @@
       "ontologyMapping": "",
       "crosstabMapping": "",
       "cardinality": "",
-      "factors": [
-       {
-        "kind": "Factor",
-        "name": "Pair",
-        "type": "string"
-       }
-      ],
+      "factors": [],
       "factorName": "Pairing Factor",
       "isSingle": false,
       "isRequired": false
@@ -4466,68 +4538,65 @@
        "meta": [],
        "name": "Control"
       },
-      "isRequired": false
+      "isRequired": true
+     },
+     {
+      "kind": "MappingFilter",
+      "name": "Groups to export",
+      "description": "",
+      "namedFilter": {
+       "kind": "NamedFilter",
+       "logical": "or",
+       "not": false,
+       "filterExprs": [
+        {
+         "kind": "FilterExpr",
+         "filterOp": "equals",
+         "stringValue": "Control",
+         "factor": {
+          "kind": "Factor",
+          "name": "Group",
+          "type": "string"
+         }
+        },
+        {
+         "kind": "FilterExpr",
+         "filterOp": "equals",
+         "stringValue": "group2",
+         "factor": {
+          "kind": "Factor",
+          "name": "Group",
+          "type": "string"
+         }
+        },
+        {
+         "kind": "FilterExpr",
+         "filterOp": "equals",
+         "stringValue": "group3",
+         "factor": {
+          "kind": "Factor",
+          "name": "Group",
+          "type": "string"
+         }
+        }
+       ],
+       "meta": [],
+       "name": "Groups to export"
+      },
+      "isRequired": true
      }
     ]
    }
   },
   {
-   "kind": "OutStep",
-   "id": "3ee4d1e5-a4e3-498f-aa81-58bf0d8a6736",
-   "groupId": "",
-   "name": "Output",
-   "inputs": [
-    {
-     "kind": "InputPort",
-     "id": "3ee4d1e5-a4e3-498f-aa81-58bf0d8a6736-i-0",
-     "linkType": "any",
-     "name": "from"
-    }
-   ],
-   "outputs": [
-    {
-     "kind": "OutputPort",
-     "id": "3ee4d1e5-a4e3-498f-aa81-58bf0d8a6736-o-0",
-     "linkType": "any",
-     "name": "to"
-    }
-   ],
-   "rectangle": {
-    "kind": "Rectangle",
-    "extent": {
-     "kind": "Point",
-     "x": 88.99000000000001,
-     "y": 55.0
-    },
-    "topLeft": {
-     "kind": "Point",
-     "x": 1235.1953974405928,
-     "y": 575.8333333333334
-    }
-   },
-   "state": {
-    "kind": "StepState",
-    "taskId": "",
-    "taskState": {
-     "kind": "InitState"
-    }
-   },
-   "description": "Output of a sub workflow.",
-   "groupPortPosition": {
-    "kind": "Point",
-    "x": 0.0,
-    "y": 0.0
-   }
-  },
-  {
    "kind": "InStep",
-   "id": "cbd51d58-6578-4396-b681-9975fffbfa1c",
+   "id": "73f872b6-8d42-4bf6-b172-315873e17c17",
    "groupId": "",
    "name": "Input",
    "inputs": [
     {
      "kind": "InputPort",
-     "id": "cbd51d58-6578-4396-b681-9975fffbfa1c-i-0",
+     "id": "73f872b6-8d42-4bf6-b172-315873e17c17-i-0",
      "linkType": "any",
      "name": "from"
     }
@@ -4535,7 +4604,7 @@
    "outputs": [
     {
      "kind": "OutputPort",
-     "id": "cbd51d58-6578-4396-b681-9975fffbfa1c-o-0",
+     "id": "73f872b6-8d42-4bf6-b172-315873e17c17-o-0",
      "linkType": "any",
      "name": "to"
     }
@@ -4549,8 +4618,8 @@
     },
     "topLeft": {
      "kind": "Point",
-     "x": 529.4891269841271,
-     "y": -126.57936507936508
+     "x": 533.9335714285719,
+     "y": -128.8015873015872
     }
    },
    "state": {
@@ -4570,8 +4639,8 @@
  ],
  "offset": {
   "kind": "Point",
-  "x": -31.7619047619048,
-  "y": 124.6349206349205
+  "x": 343.7936507936507,
+  "y": 177.96825396825366
  },
  "scale": 0.9
 }
